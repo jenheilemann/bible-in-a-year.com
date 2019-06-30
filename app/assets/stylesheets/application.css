@@ -13,3 +13,204 @@
  *= require_tree .
  *= require_self
  */
+
+/*
+html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, q,cite, em, img,
+small, strong, sub, sup, var,
+b, i, ul, li, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header {
+margin:0; padding:0; border:0; outline:0; font-size:100%;vertical-align:baseline; background:transparent; }
+aside, footer, header, caption { display:block; }
+table caption { display: table-caption; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+
+/* END RESET CSS */
+
+body { font:13px/1.231 sans-serif; *font-size:small; }
+body{font-size:87.5%;font-size:14px;line-height:1.68em;}
+body, select, input, textarea { color: #333; font-family: serif; }
+html { overflow-y: scroll; }
+
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; }
+
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td, td img { vertical-align: top; }
+
+::-moz-selection{ background: grey; color:#fff; text-shadow: none; }
+::selection { background: grey; color:#fff; text-shadow: none; }
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden;}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/*
+Type-A-File "Library Science" designed by Jessica Hische.
+http://www.jessicahische.com
+@jessicahische
+Creative Commons License by Attribution. Feel free to take it, adapt it, & use it on both commercial and non-commercial projects. Though I'd like a smidgeon of credit, so just leave this bit in here. K?
+*/
+
+.drop-cap{font-family:'Times New Roman', Times, serif;}
+
+/*HTML Standard Elements*/
+h1{font-size:3em;line-height:1.333em;margin:.97em 0 0em;border-bottom:1px dotted black;padding-bottom:.4em;}
+h2{font-size:2em;line-height:1.1em;margin:2em 0 .5em;letter-spacing:.05em;font-style:italic;}
+h3{font-size:1.125em;}
+h4{font-weight:bold;font-size:1em;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+small{display:block;font-size:.75em;letter-spacing:.1em;margin:2.2em 0 -.2em;font-style:italic;font-weight:bold;line-height:2em;}
+p, ul {margin:1.5em 0 1em;}
+ul{list-style-position:outside;list-style-type:disc;line-height:1.5;}
+li{margin-bottom:.75em;}
+blockquote{font-style:italic;margin:.875em 0em 0em 1.5em;line-height:1.75em;font-size:1.2em;}
+blockquote:before{content: "“";font-size:2em;text-indent:-.8em;margin-top:.1em;float:left;opacity:.5;}
+cite{display:block;text-transform:uppercase;letter-spacing:1px;font-style:normal;font-size:smaller;margin-top:.5em;margin-left:1.5em;}
+cite:before{content:"—";font-size:1.5em;text-indent:-1.3em;font-weight:bold;margin-top:-.1em;opacity:.5;}
+pre{margin:1.5em;}
+dl{margin:1.45em 0;/*border-top:1px dotted #999;border-bottom:1px dotted #999;*/}
+dt{word-spacing:.2em;border-bottom:1px dotted #999;margin-top:1.5em;font-weight:bold;text-transform:uppercase;font-size:.9em;letter
+border-right: dotted 1px;-spacing:.2em;padding-bottom:.5em;}
+dt:before{content:"\2767";font-size:1.25em;text-indent:-1.5em;float:left;}
+dd{font-style:italic;font-size:.9em;margin-bottom:1.65em;line-height:1.75em;margin-top:.75em;}
+abbr{text-transform:uppercase;font-size:.9em;letter-spacing:.1em;}
+p {margin-bottom:0;hyphenate: auto;hyphenate-before:2;hyphenate-after:3;hyphenate-lines: 3;orphans:4}
+p + p, p + aside + p, p + .sidenote + p, p.kicker + p.kicker{text-indent:1.8em;margin-top:0;}
+sup{font-family:arial, sans-serif;vertical-align:super;font-size:75%;margin-right:.4em;text-transform:lowercase;font-variant:small-caps;letter-spacing:.1em;line-height:0;}
+aside {font-size:.83em;font-style:italic;margin-top:-.4em;}
+aside h1 {text-transform:uppercase;margin-bottom:.8em;font-size:1em;line-height:1.5em;font-style:normal;font-weight:bold;letter-spacing:.2em;padding-bottom:.7em;}
+aside p {line-height:1.7em;margin:0;font-style:normal;}
+aside ul, aside ol{margin-top:1.3em;line-height:1.7em;}
+aside ul li{margin-bottom: 0em;}
+/* :first-line {text-transform:uppercase;font-style:normal;letter-spacing:.25em;font-size:.9em;} */
+.drop-cap {display:block;font-style:normal;font-size:8em;float:left;margin:.04em .1em 0 0;line-height:.67em; font-family: 'Times New Roman', Times, serif;}
+
+
+/* Primary Styles
+   Author: Jen Heilemann
+   Classes & Ids to be aware of:
+  p.poetry
+  p.otpoetry
+  p.psasuper
+  p.bodytext
+  p.lamhebrew
+  strong.versenum
+  h2.chapter
+  h2.psalm
+  h1#date
+  h1#reference
+  body#{page title}
+*/
+
+body { background: #F5EBDE url('../images/background.jpg'); }
+q { font-weight: bold; display: block; }
+img { margin: 2em auto;  display: block; }
+aside img { margin: 0; }
+input { background: transparent; border-style: dotted; border-width: 1px; border-color: #333; font-size: inherit; }
+input[type=text] { width: 16em; }
+input:hover, input:focus { background: #e2d8cc; }
+input.paypal { margin: 1em auto 0; width: auto; height: auto; border: none; }
+
+div#container { max-width: 50em; min-width: 15em; }
+.no-js div#container { width: 50em; }
+.ie6 #container { width: 50em; }
+div#main { padding: 3em; }
+
+div#reading { padding: 2em; padding-top: .6em; margin-top: 3em; background-color: #fff;
+  -moz-box-shadow: 0px 0px .5em #bbb;
+  -webkit-box-shadow: 0px 0px .5em #bbb;
+  box-shadow: 0px 0px .5em #bbb;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em; }
+
+header { color: #a58B7E; border-bottom: dotted 1px; margin: 2em 18%; }
+header h1 { text-align: center; font-size: 1.1em; border-style: none; font-variant:small-caps; padding-right: 1em; padding-left: 1em; letter-spacing: .1em; border: none; text-shadow: -1px -1px 0 white; }
+h1#reference { text-align: center; }
+
+.js p.sidenote { margin-top: 0; text-align: center; font-weight: bold; font-style: normal; }
+.js p.sidenote span { cursor:pointer; color: #607890; }
+.js p.sidenote span:hover { color: #036; }
+.js a.hide { text-decoration: none; }
+.no-js p.sidenote { display: none; }
+.js p.alt { display: none; visibility: hidden; }
+.js aside { padding-left: 2em; padding-right: 2em; }
+.no-js aside { display: block; position: absolute; top: 4em; left: 60em; max-width: 25em; padding-right: 2em; }
+.nocsscolumns aside { height: auto; }
+aside h1 { break-before: column; }
+aside p, aside img { break-after: column; }
+aside p { break-inside: avoid-column; }
+
+p.poetry, p.otpoetry, p.psasuper { padding-right:15%; padding-left: 15%; }
+h2+p.poetry:first-line,
+p.psasuper+p.poetry:first-line { text-transform:uppercase; font-style:normal; letter-spacing:.2em; font-size:.9em; }
+p.poetry+p.bodytext, p.otpoetry+p{ margin-top: 1.5em; }
+p.psasuper { font-size: .9em; font-style: italic; }
+p.lamhebrew { text-align: center; font-weight: bold; }
+strong.versenum { display: none; }
+
+#sched { position: absolute; left: -1000px; top: 2em; margin: 0; background: #ffffff; display: none;
+  -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+  -moz-box-shadow: 0 0 8px gray; -webkit-box-shadow: 0 0 8px gray; filter: progid:DXImageTransform.Microsoft.Shadow(color='#272229', Direction=135, Strength=3); box-shadow: 0 0 8px gray; }
+#sched h1, #sched p { text-align: center; }
+td, th{ padding: .1em .5em; }
+tr#thisweek { font-weight: bold;}
+tr a { text-decoration: none; color: inherit; }
+tr a:hover { text-decoration: underline; }
+
+footer { max-width:53.33em; margin: 2em auto; display:block;font-size:.75em;letter-spacing:.1em;font-style:italic;font-weight:bold;line-height:2em; }
+footer p {margin:2.2em 0 -.2em;}
+
+@media screen and (min-width: 480px){
+.js aside { -moz-column-count: 2; -webkit-column-count: 2; column-count: 2;
+  -moz-column-gap: 2em; -webkit-column-gap: 2em; column-gap: 2em;  }
+aside .hide { display: none; }
+}
+
+@media screen and (max-width: 480px) {
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.2em; }
+.no-js div#container { width: 100% }
+div#main { padding: 1em 0;}
+div#reading { padding: 1em;}
+.js aside {padding: 0 1em; }
+.no-js aside { display: block; position: absolute; max-width: 100%; width: 12em; left: 100%; }
+.schedlink { display: none; }
+.drop-cap { display:inline; font-size:inherit; float:none; margin:0; line-height:inherit; font-family: serif; }
+p.poetry, p.otpoetry, p.psasuper { padding-right: 7%; padding-left: 7%; }
+}
+/*print styles inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/
+*/
+@media print {
+* { background: transparent !important; color: black !important; text-shadow: none !important; }
+a, a:visited { color: #444 !important; text-decoration: underline; }
+a[href]:after { content: " (" attr(href) ")"; }
+abbr[title]:after { content: " (" attr(title) ")"; }
+.ir a:after { content: ""; }  /* Don't show links for images */
+pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+tr, img { page-break-inside: avoid; }
+@page { margin: 0.5cm; }
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3{ page-break-after: avoid; }
+}

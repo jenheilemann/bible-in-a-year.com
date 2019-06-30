@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BibleInAYearRuby</title>
+    <title>Bible-in-a-Year.com</title>
+
+    <meta name="description" content="Read a new scripture passage every day. Read through the whole bible in a year. Simple. Easy. Based on the Shirkers and Slackers Bible Reading Program.">
+    <meta name="author" content="Jen Heilemann">
+    <meta name="keywords" content="bible, year, bible in a year, shirkers and slackers, bible-in-a-year">
+
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +17,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="index">
+    <div id="container">
+      <div id="main">
+      <%= yield %>
+
+      <footer>
+
+        <p>Scripture quoted by permission. All quotations are from the NET Bible<sup>&#174;</sup> copyright &copy;1996-2006 by Biblical Studies Press, L.L.C. <a href="http://bible.org">http://bible.org</a> All rights reserved.</p>
+
+        <p>Design and care by <a href="http://www.jenheilemann.com/">Jen Heilemann</a>
+          | <%= copyright(2011) %> Jen Heilemann</p>
+      </footer>
+    </div>
   </body>
 </html>
