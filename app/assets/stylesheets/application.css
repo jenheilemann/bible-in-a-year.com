@@ -89,8 +89,8 @@ cite{display:block;text-transform:uppercase;letter-spacing:1px;font-style:normal
 cite:before{content:"—";font-size:1.5em;text-indent:-1.3em;font-weight:bold;margin-top:-.1em;opacity:.5;}
 pre{margin:1.5em;}
 dl{margin:1.45em 0;/*border-top:1px dotted #999;border-bottom:1px dotted #999;*/}
-dt{word-spacing:.2em;border-bottom:1px dotted #999;margin-top:1.5em;font-weight:bold;text-transform:uppercase;font-size:.9em;letter
-border-right: dotted 1px;-spacing:.2em;padding-bottom:.5em;}
+dt{word-spacing:.2em;border-bottom:1px dotted #999;margin-top:1.5em;font-weight:bold;text-transform:uppercase;font-size:.9em;letter-spacing:.2em;
+border-right: dotted 1px;padding-bottom:.5em;}
 dt:before{content:"\2767";font-size:1.25em;text-indent:-1.5em;float:left;}
 dd{font-style:italic;font-size:.9em;margin-bottom:1.65em;line-height:1.75em;margin-top:.75em;}
 abbr{text-transform:uppercase;font-size:.9em;letter-spacing:.1em;}
