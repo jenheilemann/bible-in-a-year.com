@@ -38,8 +38,8 @@ table { border-collapse:collapse; border-spacing:0; }
 
 /* END RESET CSS */
 
-body { font:13px/1.231 sans-serif; *font-size:small; }
-body{font-size:87.5%;font-size:14px;line-height:1.68em;}
+body { font:16px/1.231 sans-serif; *font-size:small; }
+body{font-size:87.5%;font-size:16px;line-height:1.68em;}
 body, select, input, textarea { color: #333; font-family: serif; }
 html { overflow-y: scroll; }
 
@@ -56,8 +56,8 @@ small { font-size: 85%; }
 strong, th { font-weight: bold; }
 td, td img { vertical-align: top; }
 
-::-moz-selection{ background: grey; color:#fff; text-shadow: none; }
-::selection { background: grey; color:#fff; text-shadow: none; }
+::-moz-selection{ background: gray; color:#fff; text-shadow: none; }
+::selection { background: gray; color:#fff; text-shadow: none; }
 
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden;}
 .clearfix:after { clear: both; }
@@ -67,6 +67,7 @@ td, td img { vertical-align: top; }
 /*
 Type-A-File "Library Science" designed by Jessica Hische.
 http://www.jessicahische.com
+http://type-a-file.com
 @jessicahische
 Creative Commons License by Attribution. Feel free to take it, adapt it, & use it on both commercial and non-commercial projects. Though I'd like a smidgeon of credit, so just leave this bit in here. K?
 */
@@ -131,7 +132,7 @@ input[type=text] { width: 16em; }
 input:hover, input:focus { background: #e2d8cc; }
 input.paypal { margin: 1em auto 0; width: auto; height: auto; border: none; }
 
-div#container { max-width: 50em; min-width: 15em; }
+div#container { max-width: 50em; min-width: 15em; margin: 0 auto; }
 .no-js div#container { width: 50em; }
 .ie6 #container { width: 50em; }
 div#main { padding: 3em; }
