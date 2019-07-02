@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_02_021640) do
+ActiveRecord::Schema.define(version: 2019_07_02_023012) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2019_07_02_021640) do
     t.integer "week"
     t.string "reference"
     t.text "content"
+    t.index ["day", "week"], name: "index_readings_on_day_and_week", unique: true
   end
 
 end
