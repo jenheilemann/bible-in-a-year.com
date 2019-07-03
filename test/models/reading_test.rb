@@ -15,7 +15,7 @@ class ReadingTest < ActiveSupport::TestCase
   test "has a reference" do
     assert_nil reading.reference
   end
-  test "has content" do
-    assert_nil reading.content
+  test "has a passage" do
+    assert_nil reading.passage
   end
 end
