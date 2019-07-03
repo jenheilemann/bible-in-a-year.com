@@ -1,0 +1,26 @@
+<p class="sidenote"><span class="schedlink">[-] (Close this Window)</span></p>
+<table summary="Yearly calendar by week with daily reading references and links to the reading on NetBible.org">
+  <caption>
+  <h1>Schedule</h1>
+  <p>The current week is highlighted in bold. Each reference is also a link to visit that text on <a href="http://netbible.org">NETbible.org</a> with footnotes and translators&lsquo; notes.</p>
+  </caption>
+  <thead>
+   <tr>
+    <td id='empty'>
+    <th> Monday
+    <th> Tuesday
+    <th> Wednesday
+    <th> Thursday
+    <th> Friday
+    <th> Saturday
+    <th> Sunday
+  <tbody>
+    <% @references.each do |week, readings| %>
+      <tr id="<%= this_week?(week) ? "thisweek" : '' %>"><th>Week <%= week %></th>
+      <% readings.each do |reading| %>
+        <td><%= link_to_net_bible(reading.reference) %>
+      <% end %>
+    <% end %>
+
+</table>
+<p class="sidenote"><span class="schedlink">[-] (Close this Window)</span></p>

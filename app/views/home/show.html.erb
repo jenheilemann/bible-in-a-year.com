@@ -1,3 +1,17 @@
-<h1>Hello World!</h1>
+<p class="sidenote" name="top" id="top"><span class="hide">[+]</span></p>
 
-<p>I like turtles.</p>
+<header>
+  <h1><%= nice_date %></h1>
+</header>
+
+
+<div id="reading">
+  <h1 id='reference'><%= @reading.reference %></h1>
+
+  <%= formatted_passage(@reading.passage).html_safe %>
+</div>
+
+<aside id="about">
+  <%= render "about" %>
+  <p class="sidenote"><a class="hide" href="#top">[+]</a></p>
+</aside>

@@ -1,3 +1,2 @@
 class Reading < ApplicationRecord
-
 end
