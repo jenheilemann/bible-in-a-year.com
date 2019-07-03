@@ -4,7 +4,7 @@ class CreateReadings < ActiveRecord::Migration[5.2]
       t.integer :day
       t.integer :week
       t.string :reference
-      t.text :content
+      t.text :passage
     end
   end
 end

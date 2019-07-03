@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_07_02_023012) do
     t.integer "day"
     t.integer "week"
     t.string "reference"
-    t.text "content"
+    t.text "passage"
     t.index ["day", "week"], name: "index_readings_on_day_and_week", unique: true
   end
 
